@@ -85,7 +85,7 @@ function App() {
   const dateFormat = "DD/MM/YYYY";
   return (
     <>
-      <MyLabel>Minha Aplicação</MyLabel>
+      <MyLabel>Minha Nova Aplicação</MyLabel>
       <MyLabel>Total Population: {totalPopulation}</MyLabel>
       <Row>
         <Col span={4}>
