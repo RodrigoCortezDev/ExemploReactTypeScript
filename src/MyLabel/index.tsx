@@ -4,6 +4,8 @@ interface IProps {
   color?: string;
 }
 
+// teste para commit
+
 const MyLabel: React.FC<IProps> = ({ color = "green", ...props }) => {
   return (
     <>
