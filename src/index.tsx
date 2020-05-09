@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { ConfigProvider } from "antd";
+import ptBr from "antd/es/locale/pt_BR";
+import "antd/dist/antd.css";
+import "moment/locale/pt-br";
+import moment from "moment";
+import App from "./App";
+
+moment.locale("pt-BR");
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ConfigProvider locale={ptBr}>
+      <App />
+    </ConfigProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
