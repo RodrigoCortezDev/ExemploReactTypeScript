@@ -6,11 +6,7 @@ interface IProps {
 
 // teste para commit
 
-<<<<<<< HEAD
-const MyLabel: React.FC<IProps> = ({ color = "blue", ...props }) => {
-=======
 const MyLabel: React.FC<IProps> = ({ color = "red", ...props }) => {
->>>>>>> master
   return (
     <>
       <label color={color}>{props.children}</label>
