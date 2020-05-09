@@ -10,6 +10,7 @@ const MyLabel: React.FC<IProps> = ({ color = "green", ...props }) => {
   return (
     <>
       <label color={color}>{props.children}</label>
+      <label color={color}>{props.children}</label>
     </>
   );
 };
