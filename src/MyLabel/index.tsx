@@ -6,7 +6,7 @@ interface IProps {
 
 // teste para commit
 
-const MyLabel: React.FC<IProps> = ({ color = "green", ...props }) => {
+const MyLabel: React.FC<IProps> = ({ color = "blue", ...props }) => {
   return (
     <>
       <label color={color}>{props.children}</label>
